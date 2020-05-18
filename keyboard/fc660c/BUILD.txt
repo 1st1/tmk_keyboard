@@ -1,0 +1,9 @@
+cd keybaords/fc660c
+
+git submodule init --update
+
+port install avr-libc avr-gcc avrdude dfu-programmer
+
+rm fc660c.hex
+
+make KEYMAP=my
